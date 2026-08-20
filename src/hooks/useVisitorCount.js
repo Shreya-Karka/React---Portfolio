@@ -20,10 +20,13 @@ import { useEffect, useState } from "react";
 // counters.
 //
 // NAMESPACE/KEY: change these if you ever want to reset the counter back to
-// 0 — a brand-new namespace+key pair always starts fresh at 0.
-const NAMESPACE = "shreya-karka-portfolio-v2";
+// 0 — a brand-new namespace+key pair always starts fresh at 0. (Rotated on
+// 2026-08-20 to shake off inflated hits from earlier testing/bugs — this is
+// a clean, never-used key, so it reads 0 until real visitors start showing
+// up on the live site.)
+const NAMESPACE = "shreya-karka-portfolio-v3";
 const KEY = "visits";
-const VISIT_FLAG = "shreya-portfolio-visit-counted";
+const VISIT_FLAG = "shreya-portfolio-visit-counted-v3";
 
 function isLocalHost() {
   const h = window.location.hostname;
